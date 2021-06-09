@@ -1,0 +1,95 @@
+body {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    background: royalblue;
+    color: white;
+    width: 100%;
+    padding: 1.25rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: flex-start;
+    width: 25%;
+    height: 400px;
+    background: lightblue;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    /* padding-top: 0.25rem; */
+}
+
+.content {
+    width: 75%;
+}
+
+.weather-today {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0.5rem;
+    background: green;
+    height: 200px;
+}
+
+.currentForecast {
+    border: 1px solid black;
+    border-radius: 20px;
+    background: lightgray;
+    margin: 0.5rem;
+    height: 150px;
+    width: 300px;
+}
+
+.weather-5day {
+    background: orange;
+    padding: 0.5rem;
+}
+
+.fiveDayContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.fiveDayInd {
+    border: 1px solid black;
+    border-radius: 20px;
+    background: lightgray;
+    height: 150px;
+    width: 125px;
+}
