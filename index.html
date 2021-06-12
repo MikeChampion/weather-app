@@ -16,7 +16,7 @@
             <section class="search-buttons">
                 <h2>Search for a city by name:</h2>
 
-                <form action="">
+                <form action="" id="searchForm">
                     <label for="location"></label>
                     <input
                         type="text"
@@ -25,7 +25,7 @@
                         placeholder="ex. Saint Louis"
                     />
 
-                    <button>Search</button>
+                    <button type="submit">Search</button>
                 </form>
             </section>
             <section class="content">
@@ -34,28 +34,25 @@
                     <div class="currentForecast">
                         <p class="cityName">
                             St. Louis, MO
-                            <span class="currCondIcon"
+                            <span
                                 ><img src="" alt="" class="conditionIcon"
                             /></span>
                             <span class="currDate">6/11/2021</span>
                         </p>
-                        <p class="data1 currTemp"></p>
-                        <p class="data currHumid"></p>
-                        <p class="data currWind"></p>
-                        <p class="data4 currUvi"></p>
+                        <div class="dataContainer">
+                            <p class="currTemp"></p>
+                            <p class="currHumid"></p>
+                            <p class="currWind"></p>
+                            <p class="currUvi"></p>
+                        </div>
                     </div>
                 </div>
                 <div class="weather-5day">
                     <h2>5 Day Forecast</h2>
-                    <div class="fiveDayContainer">
-                        <div class="fiveDayInd day1"></div>
-                        <div class="fiveDayInd day2"></div>
-                        <div class="fiveDayInd day3"></div>
-                        <div class="fiveDayInd day4"></div>
-                        <div class="fiveDayInd day5"></div>
-                    </div>
+                    <div class="fiveDayContainer"></div>
                 </div>
             </section>
+            <img src="" alt="" />
         </main>
         <footer></footer>
         <script src="./assets/js/main.js"></script>

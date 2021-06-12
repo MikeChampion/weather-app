@@ -108,23 +108,44 @@ button {
     font-weight: 100;
 }
 
-.data1 {
-    margin: 0 0 0 1.5rem;
-    font-weight: bold;
-}
-
-.data {
-    margin: 0.25rem 0 0 1.5rem;
-    font-weight: bold;
-}
-
-.data4 {
-    margin: 0.25rem 0 1rem 1.5rem;
+.dataContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.45rem;
+    margin: 0 0 0.75rem 1.75rem;
     font-weight: bold;
 }
 
 .uvIndex {
     border: 1px solid black;
+}
+
+.uvColor {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+.uvLow {
+    background: green;
+}
+
+.uvModerate {
+    background: yellow;
+}
+
+.uvHigh {
+    background: orange;
+}
+
+.uvVeryHigh {
+    background: red;
+}
+
+.uvExtreme {
+    background: purple;
 }
 
 .weather-5day {
@@ -141,11 +162,45 @@ button {
 }
 
 .fiveDayInd {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
     border: 1px solid black;
     border-radius: 20px;
     background: lightgray;
-    height: 50px;
+    /* height: 50px; */
     width: 80%;
+    padding: 5px;
+}
+
+.date-icon {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    padding-top: 0.25rem;
+}
+
+.fiveDayData {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    gap: 0.25rem;
+}
+
+.fiveDayDate {
+    text-align: center;
+}
+
+.dayDataCell {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* for desktop
