@@ -14,12 +14,36 @@
         </header>
         <main>
             <section class="search-buttons">
-                <h2>Search for a city</h2>
+                <h2>Search for a city by name:</h2>
+
+                <form action="">
+                    <label for="location"></label>
+                    <input
+                        type="text"
+                        name="location"
+                        id="location"
+                        placeholder="ex. Saint Louis"
+                    />
+
+                    <button>Search</button>
+                </form>
             </section>
             <section class="content">
                 <div class="weather-today">
                     <h2>Today's Forecast</h2>
-                    <div class="currentForecast"></div>
+                    <div class="currentForecast">
+                        <p class="cityName">
+                            St. Louis, MO
+                            <span class="currCondIcon"
+                                ><img src="" alt="test" class="conditionIcon"
+                            /></span>
+                            <span class="currDate">6/11/2021</span>
+                        </p>
+                        <p class="data1 currTemp"></p>
+                        <p class="data currHumid"></p>
+                        <p class="data currWind"></p>
+                        <p class="data currUvi"></p>
+                    </div>
                 </div>
                 <div class="weather-5day">
                     <h2>5 Day Forecast</h2>
