@@ -13,6 +13,7 @@
 const myKey = "4627a364c0e13e7b1cf41e43f2e731d4";
 const searchTerm = document.querySelector("#searchForm");
 const condition = document.querySelector(".conditionIcon");
+const currDate = document.querySelector(".currDate");
 const temp = document.querySelector(".currTemp");
 const humid = document.querySelector(".currHumid");
 const wind = document.querySelector(".currWind");
@@ -26,12 +27,16 @@ fetch(weatherReqURL)
         return response.json();
     })
     .then(function (data) {
-        //console.log(data);
+        console.log(data);
         // CURRENT CONDITIONS RENDER
         var iconSrc = data.current.weather[0].icon;
         var iconAlt = data.current.weather[0].description;
         condition.src = `http://openweathermap.org/img/wn/${iconSrc}.png`;
         condition.alt = iconAlt;
+
+        var today = data.current.dt;
+        var day = moment.unix(today).format("MMMM Do YYYY");
+        currDate.innerText = day;
         temp.innerHTML = `Temp: ${data.current.temp}&deg; F`;
         humid.innerText = `Humidity: ${data.current.humidity}%`;
         wind.innerText = `Wind speed: ${data.current.wind_speed} MPH`;
@@ -71,7 +76,9 @@ function buildForecastTile(data) {
     weatherCell.appendChild(dateIcon);
     // APPEND DATE TO DIV
     const date = document.createElement("p");
-    date.innerText = "6/11/21";
+    var today = data.dt;
+    var day = moment.unix(today).format("MMM Do");
+    date.innerText = day;
     dateIcon.appendChild(date);
     // APPEND CONDITION ICON TO DIV
     let fIcon = document.createElement("img");
