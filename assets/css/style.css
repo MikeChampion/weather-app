@@ -76,10 +76,8 @@ button {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    color: white;
     padding: 0.5rem;
-    background: green;
-    height: 200px;
+    /* height: 200px; */
 }
 
 .currentForecast {
@@ -90,7 +88,7 @@ button {
     border-radius: 20px;
     background: lightgray;
     margin: 0.5rem;
-    height: 150px;
+    /* height: 150px; */
     width: 95%;
     color: black;
 }
@@ -120,8 +118,16 @@ button {
     font-weight: bold;
 }
 
+.data4 {
+    margin: 0.25rem 0 1rem 1.5rem;
+    font-weight: bold;
+}
+
+.uvIndex {
+    border: 1px solid black;
+}
+
 .weather-5day {
-    background: orange;
     padding: 0.5rem;
 }
 
@@ -139,7 +145,7 @@ button {
     border-radius: 20px;
     background: lightgray;
     height: 50px;
-    width: 75%;
+    width: 80%;
 }
 
 /* for desktop

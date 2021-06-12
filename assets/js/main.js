@@ -1,7 +1,8 @@
 /** TODO
- * color code UV
+ * data div for spacing
+ * color code UV (needs border and bgcolor)
  * get dynamic date
- *
+ * get dynamic city name *
  *
  * get 5 day forecast, loop and create tiles, needs ...
  * date
@@ -10,11 +11,9 @@
  * wind
  * humid
  *
- *
  * enable search
  * save search into localstorage, limit to 8
- *
- *
+ * loop over and create 'past search' buttons
  *
  */
 
@@ -42,5 +41,5 @@ fetch(currWeatherReqURL)
         temp.innerText = `Temp: ${data.current.temp}`;
         humid.innerText = `Humidity: ${data.current.humidity}%`;
         wind.innerText = `Wind speed: ${data.current.wind_speed} MPH`;
-        uvi.innerText = `UV Index: ${data.current.uvi}`;
+        uvi.innerHTML = `UV Index: <span class="uvColor">${data.current.uvi}</span>`;
     });
