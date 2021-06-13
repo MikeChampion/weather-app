@@ -1,5 +1,4 @@
 /** TODO
- * get dynamic date
  * get dynamic city name data
  *
  *
@@ -33,7 +32,7 @@ fetch(weatherReqURL)
         var iconAlt = data.current.weather[0].description;
         condition.src = `http://openweathermap.org/img/wn/${iconSrc}.png`;
         condition.alt = iconAlt;
-
+        // CONVERT AND RENDER DATE
         var today = data.current.dt;
         var day = moment.unix(today).format("MMMM Do YYYY");
         currDate.innerText = day;
@@ -60,10 +59,9 @@ fetch(weatherReqURL)
         }
         // 5 DAY FORECAST RENDER
         let fiveDayData = data.daily;
-        for (i = 0; i < 5; i++) {
+        for (i = 1; i < 6; i++) {
             buildForecastTile(fiveDayData[i], 1);
         }
-        // console.log(fiveDayData);
     });
 
 function buildForecastTile(data) {
