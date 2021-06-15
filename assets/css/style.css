@@ -72,13 +72,21 @@ hr {
     margin: 0.25rem 0;
 }
 
+#prevSearchCont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 .prevSearchBtn {
     width: 45%;
     margin-top: 5px;
     border: 1px solid black;
     border-radius: 25px;
     background: steelblue;
-    color: black;
+    color: white;
 }
 
 .content {
@@ -105,7 +113,7 @@ hr {
     color: black;
 }
 
-.cityName {
+#cityName {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -114,6 +122,9 @@ hr {
     font-weight: bold;
     text-align: center;
 }
+
+/* .cityName {
+} */
 
 .currDate {
     font-size: 1rem;

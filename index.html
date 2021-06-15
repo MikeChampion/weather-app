@@ -25,15 +25,19 @@
                         placeholder="ex. Saint Louis"
                     />
 
-                    <button type="submit">Search</button>
+                    <button class="btn" type="submit">Search</button>
                 </form>
+                <hr />
+                <h2>Previous Searches</h2>
+                <div id="prevSearchCont"></div>
+                <hr />
             </section>
             <section class="content">
                 <div class="weather-today">
                     <h2>Today's Forecast</h2>
                     <div class="currentForecast">
-                        <p class="cityName">
-                            St. Louis, MO
+                        <p id="cityName">
+                            <span class="cityName"></span>
                             <span
                                 ><img src="" alt="" class="conditionIcon"
                             /></span>
