@@ -1,4 +1,4 @@
-const myKey = "4627a364c0e13e7b1cf41e43f2e731d4";
+const myKey = "380d4cdd56fdc23a8e5b27377509f220";
 const searchForm = document.querySelector("#searchForm");
 const prevSearchCont = document.querySelector("#prevSearchCont");
 const city = document.querySelector(".cityName");
