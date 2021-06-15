@@ -1,7 +1,3 @@
-/** TODO
- * enable prev search buttons (quiz answer buttons)
- */
-
 const myKey = "4627a364c0e13e7b1cf41e43f2e731d4";
 const searchForm = document.querySelector("#searchForm");
 const prevSearchCont = document.querySelector("#prevSearchCont");
