@@ -249,6 +249,7 @@ hr {
     }
 
     .search-buttons {
+        display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
@@ -297,15 +298,19 @@ hr {
 /* BEING DESKTOP STYLING */
 @media screen and (min-width: 1024px) {
     main {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
         width: 100%;
     }
 
     .search-buttons {
-        width: 30%;
+        width: 25%;
     }
 
     .content {
-        width: 65%;
+        width: 55%;
     }
     .currentForecast {
         width: 65%;
