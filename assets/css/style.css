@@ -79,16 +79,17 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    width: 100%;
 }
 
 .prevSearchBtn {
-    width: 45%;
     margin-top: 5px;
     padding: 2px;
     border: 1px solid black;
     border-radius: 25px;
     background: #1f4463;
     color: white;
+    width: 40%;
 }
 
 .content {
@@ -307,6 +308,11 @@ hr {
 
     .search-buttons {
         width: 25%;
+    }
+
+    .prevSearchBtn {
+        width: 60%;
+        padding: 4px;
     }
 
     .content {
